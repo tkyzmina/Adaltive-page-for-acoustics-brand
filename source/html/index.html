@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — Главная</title>
+
+</head>
+
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+    "main": true
+    })
+
+    <main>
+      <div class="container">
+        <section class="slider slider--1">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              @@include("source/html/components/slide.html", {
+              "img": {
+              "src": "droplet",
+              "formate": "jpg",
+              "alt": "Изображние droplet"
+              },
+              "moto-blue": "Давай",
+              "moto-black": "зажжём",
+              "name" : "Micro и Micro SE",
+              "description": "Подвесная акустика"
+              })
+
+              @@include("source/html/components/slide.html", {
+              "img": {
+              "src": "profilesub",
+              "formate": "jpg",
+              "alt": "Савбуфер"
+              },
+              "moto-blue": "Держаться",
+              "moto-black": "в тени",
+              "name" : "Profilesub",
+              "description": "Савбуфер"
+              })
+
+              @@include("source/html/components/slide.html", {
+              "img": {
+              "src": "micro-colors",
+              "formate": "jpg",
+              "alt": "Микро колонки цветные"
+              },
+              "moto-blue": "Побалуй себя",
+              "moto-black": "выбором",
+              "name" : "Micro и Micro SE",
+              "description": "Спутниковые колонки"
+              })
+
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-1"></div>
+        </section>
+
+        <section class="slider slider--2">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              @@include("source/html/components/slide-2.html", {
+              "img": {
+              "src": "adiva",
+              "formate": "jpg",
+              "alt": "Изображние adviva"
+              },
+              "discount": "Скидки до",
+              "percent": "30%",
+              "name" : "adviva"
+              })
+
+              @@include("source/html/components/slide-2.html", {
+              "img": {
+              "src": "micro-droplet",
+              "formate": "jpg",
+              "alt": "Изображние micro-droplet"
+              },
+              "discount": "Скидки до",
+              "percent": "30%",
+              "name" : "micro-droplet"
+              })
+
+              @@include("source/html/components/slide-2.html", {
+              "img": {
+              "src": "micro-se",
+              "formate": "jpg",
+              "alt": "Изображние micro-se"
+              },
+              "discount": "Скидки до",
+              "percent": "30%",
+              "name" : "micro-se"
+              })
+
+              @@include("source/html/components/slide-2.html", {
+              "img": {
+              "src": "micro",
+              "formate": "jpg",
+              "alt": "Изображние micro"
+              },
+              "discount": "Скидки до",
+              "percent": "30%",
+              "name" : "micro"
+              })
+
+              @@include("source/html/components/slide-2.html", {
+              "img": {
+              "src": "strada-2",
+              "formate": "jpg",
+              "alt": "Изображние strada-2"
+              },
+              "discount": "Скидки до",
+              "percent": "30%",
+              "name" : "strada 2"
+              })
+
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-2"></div>
+        </section>
+
+        <section class="tab">
+          <div class="tab__controls">
+            <a href="#" class="btn btn-tab tab__control active">
+              Micro
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Micro SE
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Adviva
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Adviva SE
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Micro Droplet
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Micro SE Droplet
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Adviva Droplet
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Adviva SE Droplet
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Strada 2
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Subwoofers
+            </a>
+            <a href="#" class="btn btn-tab tab__control">
+              Accessories
+            </a>
+          </div>
+          <div class="tab__items">
+            <div class="tab__item">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/micro-white.jpg" alt="Micro-white">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/micro-se.jpg" alt="Micro-se">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/adiva.jpg" alt="Adviva">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/adiva-se.jpg" alt="Adviva-se">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/micro-droplet.jpg" alt="Micro Droplet">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/micro-se-droplet.jpg" alt="Micro SE Droplet">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/adiva-droplet.jpg" alt="Adviva Droplet">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/adiva-se-droplet.jpg" alt="Adviva SE Droplet">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/strada-2.jpg" alt="Starda-2">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/subwoofers.jpg" alt="Subwoofers">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab__item no-opacity hide">
+              <a class="tab__link" href="#">
+                <div class="tab__img-wrapper">
+                  <div class="tab__img">
+                    <img src="img/content/tabs/accessories.jpg" alt="Accessories">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+
+      </div>
+    </main>
+
+    @@include("source/html/base/footer.html")
+
+    @@include("source/html/base/modal.html", {
+    "name": "feedback"
+    })
+
+    @@include("source/html/base/modal.html", {
+    "name": "success",
+    "fitContent": true,
+    "noScale": true,
+    "mod": "some-mod"
+    })
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
