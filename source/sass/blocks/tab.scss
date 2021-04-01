@@ -1,8 +1,7 @@
 .tab {
-
   display: flex;
   justify-content: space-between;
-
+  margin-bottom: 50px;
 
   @include viewport--sm {
     padding-top: 50px;
@@ -29,6 +28,7 @@
   &__control {
     margin-bottom: 26px;
     font-family: $font-family--gilroy;
+
     @include font-scale(20);
     font-weight: 700;
     line-height: 100%;
@@ -43,7 +43,7 @@
     }
 
     &:focus {
-      color: darken($color-blue, 20%)
+      color: darken($color-blue, 20%);
     }
 
     @include viewport--sm {

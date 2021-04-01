@@ -1537,7 +1537,8 @@ button,
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 50px; }
   @media (max-width: 767px) {
     .tab {
       padding-top: 50px;
