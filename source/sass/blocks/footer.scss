@@ -1,6 +1,105 @@
 .footer {
   min-height: 100px;
-  // padding: 0 60px;
 
-  // background-color: $color-blue;
+  &__list {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    list-style: none;
+
+    @include viewport--md {
+      width: 30%;
+      margin-bottom: 30px;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+    @include viewport--md {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__left {
+    display: flex;
+
+    @include viewport--sm {
+      flex-direction: column;
+    }
+  }
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include viewport--md {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    font-family: $font-family--gilroy;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: color $default-transition-settings, border-bottom $default-transition-settings;
+
+    &:hover {
+      color: $color-blue;
+      border-bottom: 1px solid $color-blue;
+    }
+
+    @include viewport--sm {
+      padding-bottom: 5px;
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    margin-right: 30px;
+
+    @include viewport--sm {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 27px;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @include viewport--md {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+  }
 }
